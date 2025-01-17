@@ -29,10 +29,9 @@ Dynamic Car Ads Scraper is a Python-based project designed to scrape car adverti
 
 ## Configure your config.json file:
 - Add your Telegram bot token and chat ID.
-- Include the URLs for the websites you want to scrape.
-{
-    "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
-    "telegram_chat_id": "YOUR_TELEGRAM_CHAT_ID",
+- Include the URLs for the websites you want to scrape, and Telegram bot and chat info
+"telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+"telegram_chat_id": "YOUR_TELEGRAM_CHAT_ID",
     "ss_urls": [
         "https://www.ss.com/en/transport/cars/toyota/land-cruiser/today/sell/",
         "https://www.ss.com/lv/transport/cars/toyota/hilux/today/sell/"
