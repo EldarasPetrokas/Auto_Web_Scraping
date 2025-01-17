@@ -57,14 +57,10 @@ def main():
         print(f"Scraping completed in {end_time - start_time:.2f} seconds.")  # Print the elapsed time
 
         # Step 3: Save ads to the database
-        print("Saving ads to the database...")
         save_to_database(ads)
-        print("Ads saved to the database.")
 
         # Step 4: Send new ads to Telegram
-        print("Sending ads to Telegram...")
         asyncio.run(send_to_telegram())  # Run the async function in an event loop
-        print("Telegram notifications sent.")
 
         time.sleep(30)
 
