@@ -1,0 +1,43 @@
+{
+    "autoplius_urls": [
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?make_id=44&model_id=242",
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?make_id=44&model_id=239",
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?make_id=44&model_id=35983",
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?make_id=63&model_id=624",
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?make_id=85&model_id=994",
+        "https://autoplius.lt/skelbimai/naudoti-automobiliai?fuel_id%5B30%5D=30&fuel_id%5B31%5D=31&category_id=2&make_id%5B44%5D=221&make_date_from=2006"
+    ],
+    "auto24_urls": [
+        "https://eng.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&b=13&bw=227&ae=1&af=50&ssid=220742556&ak=0",
+        "https://eng.auto24.ee/kasutatud/nimekiri.php?b=13&bw=83&ae=1&ssid=220742543&ak=0",
+        "https://eng.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&b=13&bw=82&h%5B0%5D=1&ae=1&af=50&ssid=220742544&ak=0",
+        "https://eng.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&b=3&bw=993&ae=1&af=50&ssid=220742550&ak=0",
+        "https://eng.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&b=7&bw=212&f1=2017&ae=1&af=50&ssid=220742553&ak=0"
+    ],
+    "blocket_urls": [
+        "https://www.blocket.se/bilar/sok?filter=%7B%22key%22%3A%22make%22%2C%22values%22%3A%5B%22Toyota%22%2C%22Toyota%22%5D%7D&filter=%7B%22key%22%3A%22models%22%2C%22values%22%3A%5B%22Land+Cruiser-serien%22%5D%7D&sortOrder=Senaste",
+        "https://www.blocket.se/bilar/sok?filter=%7B%22key%22%3A%22make%22%2C%22values%22%3A%5B%22Toyota%22%5D%7D&filter=%7B%22key%22%3A%22models%22%2C%22values%22%3A%5B%22Hilux%22%5D%7D",
+        "https://www.blocket.se/bilar/sok?filter=%7B%22key%22%3A%22make%22%2C%22values%22%3A%5B%22Mitsubishi%22%5D%7D&filter=%7B%22key%22%3A%22models%22%2C%22values%22%3A%5B%22L200%22%5D%7D",
+        "https://www.blocket.se/bilar/sok?q=ford+ranger&filter=%7B%22key%22%3A%22make%22%2C%22values%22%3A%5B%22Ford%22%5D%7D&filter=%7B%22key%22%3A%22models%22%2C%22values%22%3A%5B%22Ranger%22%5D%7D"
+
+    ],
+    "otomoto_urls": [
+        "https://www.otomoto.pl/osobowe/toyota/land-cruiser/od-2010?search%5Border%5D=created_at_first%3Adesc",
+        "https://www.otomoto.pl/osobowe/toyota/hilux?search%5Border%5D=created_at_first%3Adesc"
+    ],
+    "autogidas_urls": [
+        "https://autogidas.lt/skelbimai/automobiliai/toyota/land-cruiser/?fbclid=IwZXh0bgNhZW0CMTAAAR0awccHEHqCYzQlYPMKwZZKAJbFMA2Vdqp8nKjiRu4dR8PqOOUKLexWpUo_aem_c-A-rRLPq8NmA5RXWDpcFA",
+        "https://autogidas.lt/skelbimai/automobiliai/toyota/hilux/?fbclid=IwZXh0bgNhZW0CMTAAAR1G8nAL7pjPrmQOUcEZ7b0v_MkMHL23maoqKGvPIlX-NTZ2oPJJySdC4d4_aem_LSw-ZFgnoNlGv-Y68IkzeA",
+        "https://autogidas.lt/skelbimai/automobiliai/?f_1%5B0%5D=Ford&f_model_14%5B0%5D=Ranger&f_215=&f_216=&f_41=2017&f_42=&f_376=",
+        "https://autogidas.lt/skelbimai/automobiliai/?f_1%5B0%5D=Mitsubishi&f_model_14%5B0%5D=L200&f_215=&f_216=&f_41=&f_42=&f_376=",
+        "https://autogidas.lt/skelbimai/automobiliai/?f_1%5B0%5D=Toyota&f_model_14%5B0%5D=RAV4&f_215=&f_216=&f_41=2006&f_42=&f_2%5B2%5D=Benzinas&f_2%5B3%5D=Benzinas%2FDujos&f_376="
+    ],
+    "ss_urls": [
+        "https://www.ss.com/en/transport/cars/toyota/land-cruiser/sell/",
+        "https://www.ss.com/lv/transport/cars/toyota/hilux/sell/",
+        "https://www.ss.com/lv/transport/cars/toyota/rav-4/sell/",
+        "https://www.ss.com/lv/transport/cars/mitsubishi/l-200/sell/"
+    ],
+    "telegram_bot_token": "7969872762:AAGi-JqNh0pHU10KnDpHHYRDKr2qNSZyKJ8",
+    "telegram_chat_id": "1757631208"
+}

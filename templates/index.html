@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Config</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            font-size: 14px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            font-weight: bold;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Config</h1>
+    <form id="configForm">
+        <!-- Loop through all keys except telegram_bot_token and telegram_chat_id -->
+        {% for key, value in config.items() %}
+        {% if key not in ["telegram_bot_token", "telegram_chat_id"] %}
+        <div class="category">
+            <label for="{{ key }}">{{ key.replace('_', ' ').title() }}</label>
+            <textarea id="{{ key }}" data-key="{{ key }}">{{ '\n\n'.join(value) if value is iterable else value }}</textarea>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        <!-- Explicitly define Telegram Bot Token field -->
+        <div class="category">
+            <label for="telegram_bot_token">Telegram Bot Token</label>
+            <textarea id="telegram_bot_token" data-key="telegram_bot_token">{{ config.get("telegram_bot_token", "") }}</textarea>
+        </div>
+
+        <!-- Explicitly define Telegram Chat ID field -->
+        <div class="category">
+            <label for="telegram_chat_id">Telegram Chat ID</label>
+            <textarea id="telegram_chat_id" data-key="telegram_chat_id">{{ config.get("telegram_chat_id", "") }}</textarea>
+        </div>
+
+        <button type="button" onclick="updateConfig()">Save Changes</button>
+        <div id="message" class="message hidden"></div>
+    </form>
+    <script>
+        function updateConfig() {
+            const textareas = document.querySelectorAll("textarea");
+            const config = {};
+            textareas.forEach(textarea => {
+                const key = textarea.getAttribute("data-key");
+                const value = textarea.value.trim();
+                // Treat specific fields as single-line values
+                if (key === "telegram_bot_token" || key === "telegram_chat_id") {
+                    config[key] = value;
+                } else {
+                    // Split multi-line input into an array for URL fields
+                    config[key] = value.split("\n").filter(line => line.trim() !== "");
+                }
+            });
+
+            fetch("/update", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(config)
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messageDiv = document.getElementById("message");
+                if (data.message) {
+                    messageDiv.style.color = "green";
+                    messageDiv.textContent = data.message;
+                } else {
+                    messageDiv.style.color = "red";
+                    messageDiv.textContent = data.error;
+                }
+                messageDiv.classList.remove("hidden");
+
+                // Hide the message after 3 seconds
+                setTimeout(() => {
+                    messageDiv.classList.add("hidden");
+                }, 3000);
+            })
+            .catch(err => alert("Error: " + err));
+        }
+    </script>
+</body>
+</html>
