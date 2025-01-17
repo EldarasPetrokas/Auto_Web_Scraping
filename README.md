@@ -26,9 +26,9 @@ cd dynamic-car-ads-scraper
    
 ## Install dependencies
 pip install -r requirements.txt
-Configure your config.json file:
 
-## Add your Telegram bot token and chat ID.
+## Configure your config.json file:
+Add your Telegram bot token and chat ID.
 Include the URLs for the websites you want to scrape.
 {
     "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
