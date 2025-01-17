@@ -20,9 +20,9 @@ Dynamic Car Ads Scraper is a Python-based project designed to scrape car adverti
 - ChromeDriver (compatible with your Chrome version)
 
 ## Installation
-Clone the repository:
-git clone https://github.com/EldarasPetrokas/Auto_Web_Scraping.git
-cd Auto_Web_Scraper
+- Clone the repository:
+- git clone https://github.com/EldarasPetrokas/Auto_Web_Scraping.git
+
    
 ## Install dependencies
 pip install -r requirements.txt
