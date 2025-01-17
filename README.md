@@ -41,5 +41,5 @@ Include the URLs for the websites you want to scrape.
 }
 
 ## Start the scraper
-python main.py
+## python main.py
 Scraper runs continuously in a loop with a 30-second interval, modify main.py time.sleep() if you want to edit the loop interval.
