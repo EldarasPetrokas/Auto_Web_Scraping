@@ -16,13 +16,13 @@ Dynamic Car Ads Scraper is a Python-based project designed to scrape car adverti
 
 ## Requirements
 - Python 3.8 or higher
-- Google Chrome browser
+- Chromium browser (Can be done with Google Chrome but it will significantly slower)
 - ChromeDriver (compatible with your Chrome version)
 
 ## Installation
 Clone the repository:
 git clone https://github.com/EldarasPetrokas/Auto_Web_Scraping.git
-cd dynamic-car-ads-scraper
+cd Auto_Web_Scraper
    
 ## Install dependencies
 pip install -r requirements.txt
@@ -42,14 +42,6 @@ Include the URLs for the websites you want to scrape.
 
 ## Start the scraper
 python main.py
-Usage
 
-## Run the scraper continuously: To run the scraper in a loop with a 30-second interval, modify main.py to include
-import time
-while True:
-    try:
-        main()
-        time.sleep(30)
-    except KeyboardInterrupt:
-        break
-.
+
+## Scraper runs continuously in a loop with a 30-second interval, modify main.py time.sleep() if you want to edit the loop interval.
