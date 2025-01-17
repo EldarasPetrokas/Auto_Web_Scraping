@@ -25,11 +25,11 @@ Dynamic Car Ads Scraper is a Python-based project designed to scrape car adverti
 
    
 ## Install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ## Configure your config.json file:
-Add your Telegram bot token and chat ID.
-Include the URLs for the websites you want to scrape.
+- Add your Telegram bot token and chat ID.
+- Include the URLs for the websites you want to scrape.
 {
     "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
     "telegram_chat_id": "YOUR_TELEGRAM_CHAT_ID",
@@ -41,4 +41,4 @@ Include the URLs for the websites you want to scrape.
 }
 
 ## Start the scraper python main.py
-Scraper runs continuously in a loop with a 30-second interval, modify main.py time.sleep() if you want to edit the loop interval.
+- Scraper runs continuously in a loop with a 30-second interval, modify main.py time.sleep() if you want to edit the loop interval.
