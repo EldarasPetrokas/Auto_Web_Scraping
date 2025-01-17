@@ -36,8 +36,7 @@ Dynamic Car Ads Scraper is a Python-based project designed to scrape car adverti
         "https://www.ss.com/en/transport/cars/toyota/land-cruiser/today/sell/",
         "https://www.ss.com/lv/transport/cars/toyota/hilux/today/sell/"
     ],
-  
-}
+- All of this can be done with flask frontend just run flask_app.py and open local server
 
 ## Start the scraper python main.py
 - Scraper runs continuously in a loop with a 30-second interval, modify main.py time.sleep() if you want to edit the loop interval.
